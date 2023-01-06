@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+	
+	
+	<h:head>
+	<title>Details page</title>
+	</h:head>
+			
+	<h:body>
+	
+	<h:dataTable value="#{bill.getStudents()}" var="u" border="1">
+	<h:column>
+<f:facet name="header">
+Meter ID
+</f:facet>
+#{u.meterId}
+</h:column>
+
+<h:column>
+<f:facet name="header">
+Consumer Name
+</f:facet>
+#{u.crntMtrRd}
+</h:column>
+
+<h:column>
+<f:facet name="header">
+Current Meter Reading
+</f:facet>
+#{u.prevMtrRd}
+</h:column>
+
+<h:column>
+<f:facet name="header">
+Previous Meter Reading
+</f:facet>
+#{u.zone}
+</h:column>
+
+</h:dataTable>
+	
+	</h:body>
+	</html>

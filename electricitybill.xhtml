@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+	
+	
+	<h:head>
+	<title>Week 7- Coding Test </title>
+	
+	</h:head>
+	
+	<h:body>
+	<h1>ELECTRICITY BILL</h1>
+	
+	<h:form>
+
+	
+	<table>
+<tr>
+<td>MeterId:</td>
+
+<td><h:inputText value="#{bill.meterId}"></h:inputText></td>
+</tr>
+<tr>
+<td>CurrentMeterRd:</td>
+<td><h:inputText value="#{bill.crntMtrRd}"></h:inputText></td>
+</tr>
+<tr>
+<td>PreviousMeterRd:</td>
+<td><h:inputText value="#{bill.prevMtrRd}"></h:inputText></td>
+</tr>
+<tr>
+<td>Zone:</td>
+<td><h:selectOneRadio value="#{bill.zone}">
+<f:selectItem itemLabel="Rural" itemValue="Rural" />  
+<f:selectItem itemLabel="Urban" itemValue="Urban" /> </h:selectOneRadio> </td>
+</tr>
+<tr>
+<td></td>
+<td><h:commandButton value="add" action="#{bill.getStudents}"></h:commandButton></td>
+<td><h:commandButton value="go to" action="details.xhtml"></h:commandButton></td>
+</tr>
+</table>
+	</h:form>
+	
+	
+	</h:body>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</html>
